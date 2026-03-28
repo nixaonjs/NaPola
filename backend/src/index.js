@@ -6,6 +6,11 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+const expensesRoutes = require('./routes/expenses');
+app.use('/api/expenses', expensesRoutes);
+const balancesRoutes = require('./routes/balance');
+app.use('/api/balance', balancesRoutes);
+
 const pool = new Pool({
     user: process.env.DB_USER,
     host: process.env.DB_HOST,
