@@ -10,6 +10,8 @@ const expensesRoutes = require('./routes/expenses');
 app.use('/api/expenses', expensesRoutes);
 const balancesRoutes = require('./routes/balance');
 app.use('/api/balance', balancesRoutes);
+const settleRoutes = require('./routes/settle');
+app.use('/api/settle', settleRoutes);
 
 const pool = new Pool({
     user: process.env.DB_USER,
