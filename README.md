@@ -58,10 +58,12 @@ backend/
 
 ```bash
 git clone https://github.com/nixaonjs/NaPola.git
+
 cd NaPola/backend
+
 npm install
 
-Environment Variables
+Environment Variables: 
 
 Create a .env file in the backend folder:
 
@@ -71,5 +73,6 @@ DB_NAME=your_db_name
 DB_PASSWORD=your_password
 DB_PORT=5432
 
-Run
+Run:
+
 node src/index.js
