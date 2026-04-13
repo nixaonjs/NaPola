@@ -14,7 +14,7 @@ NaPola allows two users to log shared expenses, track who paid what, check the c
 - **Environment:** dotenv
 
 ## Project Structure
-
+```
 backend/
 └── src/
     ├── config/
@@ -27,7 +27,7 @@ backend/
         ├── balance.js
         ├── expenses.js
         └── settle.js
-
+```
 
 ## API Endpoints
 
